@@ -24,10 +24,10 @@ const bubbleSort = arr => {
 // console.log("object", array);
 
 const a = [
-  { name: "zed" },
-  { name: "bob" },
-  { name: "joe" },
-  { name: "apple" }
+  { name: 'zed' },
+  { name: 'bob' },
+  { name: 'joe' },
+  { name: 'apple' }
 ];
 const sortArrOfObjs = (a, b) => {
   if (a.name > b.name) {
@@ -40,7 +40,7 @@ const sortArrOfObjs = (a, b) => {
 };
 
 console.log(
-  "sortArrOfObjs",
+  'sortArrOfObjs',
   a.sort((a, b) => {
     // console.log("a", a);
     // console.log("b", b);
