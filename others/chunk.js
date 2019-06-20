@@ -17,7 +17,7 @@ chunk([1, 2, 3, 4, 5], 2);
 
 function chunk2(arr, target) {
   let ans = [];
-  for (let i = 0; i < Math.round(arr.length / target) * target; i += target) {
+  for (let i = 0; i < Math.ceil(arr.length / target) * target; i += target) {
     const subAns = arr.slice(i, i + target);
     ans.push(subAns);
   }
