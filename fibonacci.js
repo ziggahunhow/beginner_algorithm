@@ -1,13 +1,14 @@
-// fibonacci sequence, [1,1,2,3,5,8,13,21]
-// no recursion
-const fib = num => {
+const simpleFib = num => {
+  //recur 8 = recur 6 + recur 7
   let arr = [1, 1];
   for (let i = 2; i < num; i++) {
-    arr.push(arr[i - 1] + arr[i - 2]);
+    arr[i] = arr[i - 1] + arr[i - 2];
   }
   return arr[num - 1];
 };
-fib(8);
+
+const simpleFibRes = simpleFib(8);
+console.log('simpleFibRes', simpleFibRes);
 
 //recursion
 const recurFib = num => {
@@ -17,16 +18,3 @@ const recurFib = num => {
 };
 recurFibRes = recurFib(8);
 console.log('recurFibRes', recurFibRes);
-
-// Dynamic programming
-const dynamicFib = num => {
-  //recur 8 = recur 6 + recur 7
-  let arr = [1, 1];
-  for (let i = 2; i < num; i++) {
-    arr[i] = arr[i - 1] + arr[i - 2];
-  }
-  return arr[num - 1];
-};
-
-const dynamicFibRes = dynamicFib(8);
-console.log('dynamicFibRes', dynamicFibRes);
