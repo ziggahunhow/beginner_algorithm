@@ -1,4 +1,3 @@
-// Leetcode #989
 const addToArrayForm = function(A, K) {
   let carry = 0;
   for (let i = A.length - 1; i >= 0; i--) {

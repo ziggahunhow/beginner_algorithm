@@ -1,4 +1,3 @@
-// Leetcode #1002
 var commonChars = function(A) {
   let res = [];
   let shortest = '';

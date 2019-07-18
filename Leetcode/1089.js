@@ -1,4 +1,3 @@
-// Leetcode 1089. Duplicate Zeros
 // answer source: https://www.wandouip.com/t5i326811/
 
 const duplicateZeros = arr => {

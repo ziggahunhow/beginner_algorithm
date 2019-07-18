@@ -1,4 +1,3 @@
-// Leetcode 344
 var reverseString = function(s) {
   let lastIndex = s.length - 1;
   for (let i = 0; i < s.length; i++) {
