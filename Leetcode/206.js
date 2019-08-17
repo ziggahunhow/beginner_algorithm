@@ -20,6 +20,7 @@ const reverseList = function(head) {
 // Input: 1->2->3->4->5->NULL
 // Output: 5->4->3->2->1->NULL
 
-const reverseListRecur = function(head) {
+const reverseList = head => {
   if (!head || !head.next) return head;
+  return reverseList(head.next);
 };
