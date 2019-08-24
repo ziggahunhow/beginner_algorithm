@@ -38,8 +38,3 @@ function recur(l1, l2, ls) {
   }
   return recur(newl1, newl2, ls);
 }
-
-const mergeTwoLists = function(l1, l2) {
-  let ls = [];
-  const res = recur(l1, l2, ls);
-};
